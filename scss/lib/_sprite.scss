@@ -1,0 +1,115 @@
+.icon.social__icons-facebook a {
+  text-align:center;
+  &:before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/icon.svg);
+    -webkit-background-size: 81px 7px;
+    background-size: 90px 20px;
+    background-position: -1px 0;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.social__icons-twitter a{
+  text-align:center;
+  &:before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/icon.svg);
+    -webkit-background-size: 8px 100px;
+    background-size: 80px 20px;
+    background-position: -17px 0;
+    background-repeat: no-repeat;
+    width: 20px;
+    height:20px;
+  }
+}
+.social__icons-pinterest a{
+  text-align:center;
+  &:before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/icon.svg);
+    -webkit-background-size: 8px 100px;
+    background-size: 80px 20px;
+    background-position: -38px 0;
+    background-repeat: no-repeat;
+    width: 20px;
+    height:20px;
+  }
+}
+.social__icons-link a{
+  text-align:center;
+  &:before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../img/icon.svg);
+    -webkit-background-size: 8px 100px;
+    background-size: 80px 20px;
+    background-position: -55px 0;
+    background-repeat: no-repeat;
+    width: 25px;
+    height:20px;
+  }
+}
+.col1{
+  &:before {
+    content: '';
+    display: inline-block;
+    background: url(../img/about.png);
+    -webkit-background-size: 808px 118px;
+    background-size: 808px 118px;
+    background-position: -400px 20px;
+    background-repeat: no-repeat;
+    width: 150px;
+    height:180px;
+  }
+  &:hover{
+    &:before {
+      background-position: 20px 25px;
+    }
+  }
+}
+.col2{
+  &:before {
+    content: '';
+    display: inline-block;
+    background: url(../img/about.png);
+    -webkit-background-size: 808px 118px;
+    background-size: 808px 118px;
+    background-position: -540px 20px;
+    background-repeat: no-repeat;
+    width: 150px;
+    height:180px;
+  }
+  &:hover{
+    &:before {
+      background-position: -120px 25px;
+    }
+  }
+}
+.col3{
+  &:before {
+    content: '';
+    display: inline-block;
+    background: url(../img/about.png);
+    -webkit-background-size: 808px 118px;
+    background-size: 808px 118px;
+    background-position: -667px 20px;
+    background-repeat: no-repeat;
+    width: 150px;
+    height:180px;
+  }
+  &:hover{
+    &:before {
+      background-position: -248px 25px;
+    }
+  }
+}

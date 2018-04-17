@@ -1,0 +1,17 @@
+.footer{
+  background-color: #69d2e7;
+  padding: 2%;
+  @include below-mobile-portrait {
+    padding: 5%;
+  }
+  .section__content{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    font-size:0.8rem;
+    color:#ffffff;
+    @include below-mobile-portrait {
+      font-size:0.6rem;
+    }
+  }
+}

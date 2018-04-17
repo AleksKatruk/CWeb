@@ -1,0 +1,26 @@
+@mixin below-tablet-portrait {
+  @media only screen and (max-width : $mq-tablet-portrait) {
+    @content;
+  }
+}
+@mixin below-mobile-portrait {
+  @media only screen and (max-width : $mq-mobile-portrait) {
+    @content;
+  }
+}
+@mixin below-desktop-portrait {
+  @media only screen and (max-width : $mq-desktop-portrait) {
+    @content;
+  }
+}
+@mixin solidBorder($size, $color) {
+  border: $size solid $color;
+}
+@mixin shadowBox($spread, $opacity) {
+  box-shadow: 0 0 $spread rgba(0,0,0, $opacity);
+}
+@mixin radiusBox($radius) {
+  -webkit-border-radius:$radius;
+   border-radius:$radius;
+  -moz-border-radius: $radius;
+}

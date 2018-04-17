@@ -1,0 +1,37 @@
+.section-about{
+  bottom: 90px;
+  position:relative;
+  left:0;
+  right:0;
+  @include below-mobile-portrait {
+    bottom: 10px;
+  }
+  .section__content{
+    @include below-desktop-portrait {
+      max-width: 100%;
+    }
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 835px;
+    margin: 0 auto;
+    @include radiusBox(10px);
+    @include shadowBox(40px, 0.2);
+    padding: 30px;
+  }
+  .section__title{
+    font-family: 'OpenBold', sans-serif;
+    text-align:center;
+    color:#000;
+    font-size:2rem;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 20px;
+    margin:0 auto;
+    width: 300px;
+    text-transform: uppercase;
+  }
+  p{
+    line-height: 1.8rem;
+    font-size:1.2rem;
+    font-family: 'OpenLight', sans-serif;
+  }
+}

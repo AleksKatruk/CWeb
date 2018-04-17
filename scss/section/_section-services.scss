@@ -1,0 +1,32 @@
+.section-services{
+  background-color: #f1f1f1;
+  padding: 240px 0 50px 0;
+  margin: -270px 0 0 0;
+  p{
+    text-align:center;
+  }
+  .section__content{
+    @include below-mobile-portrait {
+      flex-direction: column;
+    }
+    display:flex;
+
+    justify-content:space-between;
+    margin: 0 auto;
+    max-width:870px;
+    .section-services__item{
+      @include below-mobile-portrait {
+        width:90vw;
+      }
+      display:flex;
+      overflow:hidden;
+      justify-content: center;
+      flex-direction:column;
+      width: 200px;
+      p{
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+}

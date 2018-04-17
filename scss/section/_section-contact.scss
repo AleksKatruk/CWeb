@@ -1,0 +1,101 @@
+.section-contact{
+  @include below-mobile-portrait {
+    padding: 5%;
+  }
+  margin:0 auto;
+  background-color: #f1f1f1;
+  padding: 95px 0 50px 0;
+
+  .section__title{
+    font-family: 'OpenBold', sans-serif;
+    margin:0;
+    font-size: 1.6rem;
+  }
+  .section__content{
+    @include below-mobile-portrait {
+      flex-direction:column;
+      margin:0;
+    }
+    @include below-tablet-portrait {
+      max-width: $width-wr;
+    }
+    margin: 0 auto;
+    max-width:$mq-desktop-portrait;
+    display:flex;
+    justify-content: space-between;
+    .section-contact__social{
+      @include below-tablet-portrait {
+        margin-left: 0;
+      }
+      @include below-mobile-portrait {
+        width:90vw;
+      }
+      flex-basis:40%;
+      margin-left: 8%;
+      .social__icons{
+        list-style-type: none;
+        display:flex;
+        flex-direction: row;
+        @include solidBorder(1px, #000000);
+        width:fit-content;
+        width: -moz-fit-content;
+        max-width:27%;
+        @include radiusBox(4px);
+        margin-top:30px;
+        .icon{
+          padding: 5px;
+        }
+        li:nth-child(2){
+          border-color: #000000;
+          border-width: 0 1px 0 1px;
+          border-style: solid;
+        }
+        li:nth-child(3){
+          border-color: #000000;
+          border-width: 0 1px 0 0;
+          border-style: solid;
+        }
+      }
+      p{
+        line-height: 1.5rem;
+        font-family: 'OpenLight', sans-serif;
+      }
+    }
+    .section-contact__posts-list{
+      flex-basis:50%;
+      width: 40%;
+      .posts-list {
+        flex-direction: column;
+        display: flex;
+        .posts-list__item {
+          padding: 15px 0;
+          @include below-mobile-portrait {
+            flex-direction: column;
+          }
+          display: flex;
+
+          justify-content: space-between;
+          .posts-list__item-text{
+            @include below-tablet-portrait {
+              padding-left: 2%;
+            }
+            @include below-tablet-portrait {
+              width:90vw;
+            }
+            flex-basis: 80%;
+            p{
+              font-size:1rem;
+              line-height: 1.2rem;
+            }
+          }
+          .posts-list__item-img {
+            width: 95px;
+            height: 95px;
+            background-color: #ffffff;
+            @include shadowBox(20px, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
